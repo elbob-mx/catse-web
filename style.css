@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #0049b6;
+    --color-primary-hover: #1f79ff;
+    --font-josefin: "Josefin Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-[#F2F2F2] text-gray-700 font-roboto;
+    }
+    h1 {
+        @apply font-josefin font-semibold text-[#181818] leading-21;
+    }
+}
