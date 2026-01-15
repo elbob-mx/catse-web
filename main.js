@@ -26,3 +26,19 @@ const closeFunction = () => {
 // 4. Asignar eventos de cierre
 if (btnClose) btnClose.addEventListener("click", closeFunction);
 if (overlay) overlay.addEventListener("click", closeFunction);
+
+// PROTECCIÓN DEL NÚMERO DE WHATSAPP
+const whatsappBtn = document.getElementById("whatsapp-btn");
+
+if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", () => {
+        // Dividimos el número para que los bots no lo lean como un todo
+        const countryCode = "52";
+        const areaCode = "33";
+        const number = "11755480"; // Aquí pones el resto del número
+
+        // Abrimos el enlace solo al interactuar
+        const finalUrl = `https://wa.me/${countryCode}${areaCode}${number}`;
+        window.open(finalUrl, "_blank");
+    });
+}
