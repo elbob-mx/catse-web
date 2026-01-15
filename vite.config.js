@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -6,10 +7,10 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                // Aquí le decimos a Vite todas las páginas que deben existir
-                main: "./index.html",
-                conocenos: "./conocenos.html",
-                // Cuando crees 'genios.html', lo añadirás aquí abajo
+                main: resolve(__dirname, "index.html"),
+                conocenos: resolve(__dirname, "conocenos.html"),
+                servicios: resolve(__dirname, "servicios.html"),
+                blog: resolve(__dirname, "blog.html"),
             },
         },
     },
