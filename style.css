@@ -4,14 +4,36 @@
     --color-primary: #0049b6;
     --color-primary-hover: #1f79ff;
     --font-josefin: "Josefin Sans", sans-serif;
-    --font-roboto: "Roboto", sans-serif;
+    /* Cambiamos Roboto por Inter */
+    --font-inter: "Inter", sans-serif;
 }
 
 @layer base {
+    /* Aplicamos Inter como fuente base para todo el documento */
     body {
-        @apply bg-[#F2F2F2] text-gray-700 font-roboto;
+        @apply font-inter text-gray-700;
     }
+
     h1 {
-        @apply font-josefin font-semibold text-[#181818] leading-21;
+        /* leading-tight (aprox 1.25) para móvil, leading-21 para escritorio */
+        @apply font-josefin font-semibold text-[#181818] leading-tight md:leading-21;
     }
+}
+
+@keyframes bounce-subtle {
+    0%,
+    100% {
+        transform: translateY(-18%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.animate-bounce-subtle {
+    animation: bounce-subtle 1.2s infinite;
+    display: inline-block;
+    transform-origin: bottom;
 }
