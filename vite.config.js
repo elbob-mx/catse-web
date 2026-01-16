@@ -11,6 +11,7 @@ export default defineConfig({
                 conocenos: resolve(__dirname, "conocenos.html"),
                 servicios: resolve(__dirname, "servicios.html"),
                 blog: resolve(__dirname, "blog.html"),
+                contacto: resolve(__dirname, "contacto.html"),
             },
         },
     },

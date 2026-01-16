@@ -1,44 +1,48 @@
-import "./style.css";
-
-// 1. Referencias a los elementos
-const btnOpen = document.getElementById("open-menu");
-const btnClose = document.getElementById("close-menu");
 const mobileMenu = document.getElementById("mobile-menu");
-const overlay = document.getElementById("menu-overlay");
-const body = document.body;
+const menuOverlay = document.getElementById("menu-overlay");
+const openMenuBtn = document.getElementById("open-menu");
+const closeMenuBtn = document.getElementById("close-menu");
+const mobileLinks = document.querySelectorAll("#mobile-menu a");
 
-// 2. Función para abrir el menú
-if (btnOpen) {
-    btnOpen.addEventListener("click", () => {
+function toggleMenu() {
+    const isOpen = !mobileMenu.classList.contains("-translate-x-full");
+
+    if (isOpen) {
+        // Cerrar
+        mobileMenu.classList.add("-translate-x-full");
+        menuOverlay.classList.add("hidden");
+        document.body.style.overflow = "";
+    } else {
+        // Abrir
         mobileMenu.classList.remove("-translate-x-full");
-        overlay.classList.remove("hidden");
-        body.classList.add("overflow-hidden"); // Bloquea el scroll de la página
-    });
+        menuOverlay.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+    }
 }
 
-// 3. Función unificada para cerrar
-const closeFunction = () => {
-    if (mobileMenu) mobileMenu.classList.add("-translate-x-full");
-    if (overlay) overlay.classList.add("hidden");
-    body.classList.remove("overflow-hidden"); // Libera el scroll
-};
+// Feedback visual inmediato en los enlaces del burger menu
+mobileLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        // Resetear otros enlaces por si acaso
+        mobileLinks.forEach((l) =>
+            l.classList.remove("bg-primary", "text-white", "px-4", "py-2", "rounded-xl")
+        );
 
-// 4. Asignar eventos de cierre
-if (btnClose) btnClose.addEventListener("click", closeFunction);
-if (overlay) overlay.addEventListener("click", closeFunction);
+        // Aplicar feedback inmediato
+        this.classList.add(
+            "bg-primary",
+            "text-white",
+            "px-4",
+            "py-2",
+            "rounded-xl",
+            "transition-all",
+            "duration-300"
+        );
 
-// PROTECCIÓN DEL NÚMERO DE WHATSAPP
-const whatsappBtn = document.getElementById("whatsapp-btn");
-
-if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", () => {
-        // Dividimos el número para que los bots no lo lean como un todo
-        const countryCode = "52";
-        const areaCode = "33";
-        const number = "11755480"; // Aquí pones el resto del número
-
-        // Abrimos el enlace solo al interactuar
-        const finalUrl = `https://wa.me/${countryCode}${areaCode}${number}`;
-        window.open(finalUrl, "_blank");
+        // El menú se cerrará naturalmente al cambiar de página
     });
-}
+});
+
+openMenuBtn.addEventListener("click", toggleMenu);
+closeMenuBtn.addEventListener("click", toggleMenu);
+menuOverlay.addEventListener("click", toggleMenu);
