@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios | CATSE Salud Emocional</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="overflow-x-hidden">
@@ -17,34 +17,38 @@
 
     <div id="mobile-menu" class="fixed top-0 left-0 h-full w-3/4 bg-white z-70 -translate-x-full transition-transform duration-300 ease-in-out p-8 flex flex-col shadow-2xl">
         <div class="flex justify-between items-center mb-12">
-            <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-12">
+            <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-12" />
             <button id="close-menu" class="p-2 text-primary cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
-        <nav class="flex flex-col gap-6">
-            <a href="index.html" class="text-xl font-medium text-gray-700">Inicio</a>
-            <a href="conocenos.html" class="text-xl font-medium text-gray-700">Conócenos</a>
-            <a href="servicios.html" class="text-xl font-medium text-primary">Servicios</a>
-            <a href="#" class="text-xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#0049B6] to-[#A855F7]">Genios</a>
-            <a href="blog.html" class="text-xl font-medium text-gray-700">Blog</a>
-            <a href="#" class="text-xl font-medium text-gray-700">Contacto</a>
-            <button class="text-lg bg-orange-600 text-white px-8 py-3 rounded-full font-josefin mt-4">Cursos</button>
+        <nav class="flex flex-col gap-4">
+            <a href="index.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100">Inicio</a>
+            <a href="conocenos.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100">Conócenos</a>
+            <a href="servicios.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100 text-primary font-bold">Servicios</a>
+            <a href="genios.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100 font-bold text-transparent bg-clip-text bg-linear-to-r from-[#0049B6] to-[#A855F7]">Genios</a>
+            <a href="blog.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100">Blog</a>
+            <a href="contacto.html" class="block text-xl w-full py-4 px-4 rounded-xl transition-all duration-300 hover:bg-blue-50 active:bg-blue-100">Contacto</a>
+            <button class="text-lg bg-orange-600 text-white px-8 py-3 rounded-full font-josefin mt-4">
+                Cursos
+            </button>
         </nav>
     </div>
 
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 px-8 lg:px-12 xl:px-32 py-6 md:py-8 flex justify-between items-center">
-        <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-10 md:h-12 lg:h-14">
+        <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-10 md:h-12 lg:h-14" />
         <div class="hidden xl:flex gap-10 items-center font-medium">
             <a href="index.html" class="text-xl hover:text-primary transition-colors">Inicio</a>
             <a href="conocenos.html" class="text-xl hover:text-primary transition-colors">Conócenos</a>
             <a href="servicios.html" class="text-xl text-primary border-b-2 border-primary">Servicios</a>
-            <a href="#" class="text-xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#0049B6] to-[#A855F7]">Genios</a>
+            <a href="genios.html" class="text-xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#0049B6] to-[#A855F7]">Genios</a>
             <a href="blog.html" class="text-xl hover:text-primary transition-colors">Blog</a>
-            <a href="#" class="text-xl hover:text-primary transition-colors">Contacto</a>
-            <button class="text-lg bg-orange-600 text-white px-6 py-2 rounded-full font-josefin cursor-pointer hover:bg-primary-hover duration-500 transition-colors animate-bounce-subtle drop-shadow-lg drop-shadow-orange-300 hover:drop-shadow-neutral-200">Cursos</button>
+            <a href="contacto.html" class="text-xl hover:text-primary transition-colors">Contacto</a>
+            <button class="text-lg bg-orange-600 text-white px-6 py-2 rounded-full font-josefin cursor-pointer hover:bg-primary-hover duration-500 transition-colors animate-bounce-subtle drop-shadow-lg drop-shadow-orange-300 hover:drop-shadow-neutral-200">
+                Cursos
+            </button>
         </div>
         <button id="open-menu" class="xl:hidden p-2 text-primary cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,67 +58,113 @@
     </nav>
 
     <main class="pt-32 md:pt-48 xl:pt-60 pb-20 px-4 md:px-12 space-y-24">
-
         <div class="bg-white rounded-4xl overflow-hidden shadow-sm border border-gray-100 flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
             <div class="w-full lg:w-full h-80 md:h-100 lg:h-125 bg-gray-200">
-                <img src="./assets/banners/catse-banner-servicios.webp" class="w-full h-full object-cover" alt="Bienestar">
+                <img src="./assets/banners/catse-banner-servicios.webp" class="w-full h-full object-cover" alt="Bienestar" />
             </div>
         </div>
 
         <section class="max-w-7xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl mb-6">Modelo de Atención Integral</h1>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed lg:leading-loose">
-                En CATSE no buscamos la ausencia de dificultades, sino la <span class="font-bold text-primary">consciencia y fortaleza</span> para enfrentarlas a través de la autocomprensión.
+                En CATSE no buscamos la ausencia de dificultades, sino la
+                <span class="font-bold text-primary">consciencia y fortaleza para enfrentarlas a través de la
+                    autocomprensión.</span>
             </p>
         </section>
 
         <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-10 rounded-4xl border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col">
-                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-3xl group-hover:bg-orange-300 group-hover:text-white transition-colors">👤</div>
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-3xl group-hover:bg-orange-300 group-hover:text-white transition-colors">
+                    👤
+                </div>
                 <h3 class="font-josefin text-3xl font-bold mb-4">Acompañamiento Individual</h3>
                 <p class="text-lg text-gray-700 leading-relaxed mb-6 grow">
-                    Trabajamos miedos, culpas y dolores a través de un sistema de frases hechas a medida. El objetivo es que la persona logre su <span class="font-bold">auto-comprensión</span> para modificar actitudes ante la adversidad.
+                    Trabajamos miedos, culpas y dolores a través de un sistema de frases hechas
+                    a medida. El objetivo es que la persona logre su
+                    <span class="font-bold">auto-comprensión</span> para modificar actitudes
+                    ante la adversidad.
                 </p>
                 <ul class="space-y-3 text-gray-600 mb-8 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Guía Direccional Personalizada</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Ejercicios de Autocomprensión</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Rescate de la libertad interior</li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Guía Direccional
+                        Personalizada
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Ejercicios de
+                        Autocomprensión
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Rescate de la
+                        libertad interior
+                    </li>
                 </ul>
-                <a href="#" class="text-center py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Solicitar información</a>
+                <a href="contacto.html" class="text-center py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Solicitar información</a>
             </div>
 
             <div class="bg-white p-10 rounded-4xl border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col">
-                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-3xl group-hover:bg-orange-300 group-hover:text-white transition-colors">🏢</div>
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-3xl group-hover:bg-orange-300 group-hover:text-white transition-colors">
+                    🏢
+                </div>
                 <h3 class="font-josefin text-3xl font-bold mb-4">Entornos Laborales</h3>
                 <p class="text-lg text-gray-700 leading-relaxed mb-6 grow">
-                    Aplicación del modelo CATSE en situaciones organizacionales para calibrar la <span class="font-bold">Autoridad y Responsabilidad</span>, mejorando la toma de decisiones y el ambiente humano de la empresa.
+                    Aplicación del modelo CATSE en situaciones organizacionales para calibrar la
+                    <span class="font-bold">Autoridad y Responsabilidad</span>, mejorando la
+                    toma de decisiones y el ambiente humano de la empresa.
                 </p>
                 <ul class="space-y-3 text-gray-600 mb-8 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Liderazgo y Vida Emocional</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Comunicación Asertiva</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> Manejo de estrés organizacional</li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Liderazgo y Vida
+                        Emocional
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Comunicación
+                        Asertiva
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-primary"></i> Manejo de estrés
+                        organizacional
+                    </li>
                 </ul>
-                <a href="#" class="text-center py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Consultoría Empresarial</a>
+                <a href="contacto.html" class="text-center py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Consultoría Empresarial</a>
             </div>
 
             <div class="bg-linear-to-br from-blue-50 to-white p-10 rounded-4xl border border-blue-100 shadow-sm md:col-span-2 group">
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
                     <div class="lg:w-2/3">
-                        <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-8 text-3xl text-white">🔬</div>
-                        <h3 class="font-josefin text-3xl font-bold mb-4 text-primary">Especialidad en Prevención y Adicciones</h3>
+                        <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-8 text-3xl text-white">
+                            🔬
+                        </div>
+                        <h3 class="font-josefin text-3xl font-bold mb-4 text-primary">
+                            Especialidad en Prevención y Adicciones
+                        </h3>
                         <p class="text-xl text-gray-700 leading-relaxed lg:leading-loose mb-6">
-                            Basado en una sólida trayectoria en el <span class="font-bold">CECAJ</span> y la coordinación de programas universitarios, ofrecemos un abordaje profundo sobre las emociones que llevan a las adicciones.
+                            Basado en una sólida trayectoria en el
+                            <span class="font-bold">CECAJ</span> y la coordinación de programas
+                            universitarios, ofrecemos un abordaje profundo sobre las emociones
+                            que llevan a las adicciones.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-600 font-medium">
-                            <div class="flex items-center gap-2"><span>•</span> Análisis de los 12 pasos</div>
-                            <div class="flex items-center gap-2"><span>•</span> Codependencia y Pareja</div>
-                            <div class="flex items-center gap-2"><span>•</span> Intervención en Crisis</div>
-                            <div class="flex items-center gap-2"><span>•</span> Prevención en Adolescentes</div>
+                            <div class="flex items-center gap-2">
+                                <span>•</span> Análisis de los 12 pasos
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>•</span> Codependencia y Pareja
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>•</span> Intervención en Crisis
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>•</span> Prevención en Adolescentes
+                            </div>
                         </div>
                     </div>
                     <div class="lg:w-1/3">
                         <div class="bg-white p-8 rounded-3xl shadow-lg border border-blue-50">
-                            <p class="italic text-gray-500 mb-4">"La auto-comprensión se traducirá en fortaleza para enfrentar los problemas de la vida."</p>
+                            <p class="italic text-gray-500 mb-4">
+                                "La auto-comprensión se traducirá en fortaleza para enfrentar
+                                los problemas de la vida."
+                            </p>
                             <p class="font-josefin font-bold text-primary">— Dra. Maru Sosa</p>
                         </div>
                     </div>
@@ -124,43 +174,64 @@
 
         <section class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-josefin text-4xl font-bold">Talleres y Conferencias Disponibles</h2>
+                <h2 class="font-josefin text-4xl font-bold">
+                    Talleres y Conferencias Disponibles
+                </h2>
                 <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="space-y-4">
                     <div class="p-6 bg-white border-l-4 border-primary rounded-r-2xl shadow-xs">
-                        <h5 class="font-bold text-lg">Obstáculos para el Crecimiento del Ser Humano</h5>
+                        <h5 class="font-bold text-lg">
+                            Obstáculos para el Crecimiento del Ser Humano
+                        </h5>
                     </div>
                     <div class="p-6 bg-white border-l-4 border-primary rounded-r-2xl shadow-xs">
                         <h5 class="font-bold text-lg">La Vida Emocional en el Ser Humano</h5>
                     </div>
                     <div class="p-6 bg-white border-l-4 border-primary rounded-r-2xl shadow-xs">
-                        <h5 class="font-bold text-lg">Comunicación Real para un Liderazgo Efectivo</h5>
+                        <h5 class="font-bold text-lg">
+                            Comunicación Real para un Liderazgo Efectivo
+                        </h5>
                     </div>
                 </div>
                 <div class="space-y-4">
                     <div class="p-6 bg-white border-l-4 border-orange-500 rounded-r-2xl shadow-xs">
-                        <h5 class="font-bold text-lg">Introducción a los procesos Emocionales</h5>
+                        <h5 class="font-bold text-lg">
+                            Introducción a los procesos Emocionales
+                        </h5>
                     </div>
                     <div class="p-6 bg-white border-l-4 border-orange-500 rounded-r-2xl shadow-xs">
-                        <h5 class="font-bold text-lg">Herramientas de las emociones y sentimientos</h5>
+                        <h5 class="font-bold text-lg">
+                            Herramientas de las emociones y sentimientos
+                        </h5>
                     </div>
                     <div class="p-6 bg-white border-l-4 border-orange-500 rounded-r-2xl shadow-xs">
-                        <h5 class="font-bold text-lg">Manejo del proceso en la Vida Emocional</h5>
+                        <h5 class="font-bold text-lg">
+                            Manejo del proceso en la Vida Emocional
+                        </h5>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="max-w-7xl mx-auto">
-            <h2 class="font-josefin text-4xl md:text-5xl text-primary font-bold mb-6 leading-tight md:leading-normal">Te recordamos también para los peques:</h2>
+            <h2 class="font-josefin text-4xl md:text-5xl text-primary font-bold mb-6 leading-tight md:leading-normal">
+                Te recordamos también para los peques:
+            </h2>
             <div class="relative overflow-hidden rounded-4xl bg-linear-to-r from-[#0049B6] to-[#A855F7] p-12 md:p-20 text-white">
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
                     <div class="lg:w-2/3">
-                        <h2 class="font-josefin text-4xl md:text-6xl font-bold mb-6">Acerca de "Genios"</h2>
-                        <p class="text-xl text-white/90 mb-8 max-w-2xl">Potenciamos las habilidades cognitivas y emocionales de forma innovadora para alcanzar el máximo potencial personal.</p>
-                        <button class="bg-white text-primary px-8 py-3 rounded-full font-josefin font-bold hover:bg-orange-600 hover:text-white transition-colors cursor-pointer shadow-lg text-xl">Descubrir más</button>
+                        <h2 class="font-josefin text-4xl md:text-6xl font-bold mb-6">
+                            Acerca de "Genios"
+                        </h2>
+                        <p class="text-xl text-white/90 mb-8 max-w-2xl">
+                            Potenciamos las habilidades cognitivas y emocionales de forma
+                            innovadora para alcanzar el máximo potencial personal.
+                        </p>
+                        <button class="bg-white text-primary px-8 py-3 rounded-full font-josefin font-bold hover:bg-orange-600 hover:text-white transition-colors cursor-pointer shadow-lg text-xl">
+                            Descubrir más
+                        </button>
                     </div>
                     <div class="lg:w-1/3 flex justify-center">
                         <div class="w-48 h-48 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl">
@@ -170,47 +241,72 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-[#ebebeb] border-t border-gray-100 pt-20 pb-10 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 gap-12 mb-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div class="col-span-1">
-                <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-16 mb-6">
+                <img src="/assets/logo/logo-catse.png" alt="CATSE" class="h-16 mb-6" />
+                <p class="text-gray-600 leading-relaxed">
+                    Acompañándote en tu camino hacia la plenitud emocional.
+                </p>
             </div>
             <div>
-                <h4 class="font-josefin lg:text-xl text-lg font-bold mb-4 text-[#181818]">Navegación</h4>
-                <ul class="space-y-4 lg:space-y-2 md:text-xl text-base text-gray-600">
-                    <li><a href="index.html" class="hover:text-primary transition-colors">Inicio</a></li>
-                    <li><a href="conocenos.html" class="hover:text-primary transition-colors">Conócenos</a></li>
-                    <li><a href="servicios.html" class="hover:text-primary transition-colors">Servicios</a></li>
-                    <li><a href="#" class="hover:text-primary transition-colors">Genios</a></li>
-                    <li><a href="blog.html" class="hover:text-primary transition-colors">Blog</a></li>
-                    <li><a href="#" class="hover:text-primary transition-colors">Contacto</a></li>
-                    <li><a href="#" class="hover:text-primary transition-colors text-orange-600 font-medium">Cursos</a></li>
+                <h4 class="font-josefin text-xl font-bold mb-6 text-[#181818]">Navegación</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li>
+                        <a href="index.html" class="hover:text-primary transition-colors">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html" class="hover:text-primary transition-colors">Conócenos</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html" class="hover:text-primary transition-colors">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="genios.html" class="hover:text-primary transition-colors">Genios</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="hover:text-primary transition-colors">Contacto</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-josefin lg:text-xl text-lg font-bold mb-4 text-[#181818]">Contacto</h4>
-                <ul class="space-y-4 lg:space-y-2 md:text-xl text-base text-gray-600">
-                    <li>📞 Tel: 3656 0166</li>
-                    <li>📱 Cel: 33 1175 5480</li>
+                <h4 class="font-josefin text-xl font-bold mb-6 text-[#181818]">Contacto</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li>📞 3656 0166</li>
+                    <li>📱 33 1175 5480</li>
                     <li>✉️ info@catse-emocional.com</li>
                     <li>📍 Zapopan Centro, Jalisco</li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-josefin text-lg font-bold mb-4 text-[#181818]">Redes Sociales</h4>
-                <div class="flex gap-8">
-                    <a href="#"><i class="fa-brands fa-square-facebook text-4xl lg:text-5xl hover:text-primary duration-500 transition-colors"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram text-4xl lg:text-5xl hover:text-orange-600 duration-500 transition-colors"></i></a>
+                <h4 class="font-josefin text-xl font-bold mb-6 text-[#181818]">
+                    Redes Sociales
+                </h4>
+                <div class="flex gap-6">
+                    <a href="#"><i class="fa-brands fa-square-facebook text-4xl hover:text-primary transition-colors"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-4xl hover:text-orange-600 transition-colors"></i></a>
                 </div>
             </div>
         </div>
-        <div class="text-center text-gray-600 text-sm border-t border-gray-400 pt-8">
+        <div class="text-center text-gray-500 text-sm border-t border-gray-300 pt-8">
             © 2026 CATSE. Todos los derechos reservados.
         </div>
+        <a href="https://robertogoux.com/">
+            <div class="flex flex-col items-center w-full">
+                <p class="pt-6 pb-3 text-xs text-center text-gray-700">Developed by:</p>
+                <img src="./assets/logo/logo-rrgo-ux_ui.svg" alt="rrgo UX/UI" class="h-16 mb-2" />
+            </div>
+        </a>
     </footer>
+
+    <button id="whatsapp-btn" class="fixed bottom-6 right-6 w-16 h-16 bg-[#24cc63] rounded-full flex items-center justify-center shadow-2xl z-100 hover:scale-110 transition-transform duration-300 cursor-pointer" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-white text-[32px]"></i>
+    </button>
 
     <script type="module" src="/main.js"></script>
 </body>
