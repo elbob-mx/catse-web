@@ -1,3 +1,5 @@
+import "./style.css";
+
 const mobileMenu = document.getElementById("mobile-menu");
 const menuOverlay = document.getElementById("menu-overlay");
 const openMenuBtn = document.getElementById("open-menu");
