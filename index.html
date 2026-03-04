@@ -66,9 +66,9 @@
           <h1 class="text-primary font-josefin font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-8 leading-tight">
             Encontrando bienestar emocional.
           </h1>
-          <button class="bg-primary text-white px-10 py-4 rounded-2xl font-josefin text-xl shadow-lg shadow-blue-200 cursor-pointer hover:bg-primary-hover transition-all hover:-translate-y-1">
-            Agendar cita
-          </button>
+          <a href="https://wa.me/523311755480" target="_blank" class="bg-primary xl:text-2xl text-white xl:px-10 px-4 xl:py-6 py-4 rounded-4xl font-josefin font-bold hover:bg-primary-hover transition-all shadow-lg">
+            <i class="fa-brands fa-whatsapp text-white text-2xl"></i> Agendar por WhatsApp
+          </a>
         </div>
         <div class="w-full lg:w-2/5 h-80 md:h-100 lg:h-125 bg-gray-100">
           <img src="./assets/banners/catse-banner-main.webp" class="w-full h-full object-cover" alt="Bienestar Emocional" />
@@ -78,8 +78,13 @@
 
     <section class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
       <div class="lg:w-1/2">
-        <div class="rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500">
-          <img src="https://images.unsplash.com/photo-1506836467174-27f1042aa48c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CATSE Salud" class="w-full lg:h-96 h-96 object-cover" />
+        <div class="lg:w-full flex justify-center lg:justify-end">
+          <div class="w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500">
+            <video controls class="w-full h-full object-cover" poster="./assets/videos/intro-poster.jpg">
+              <source src="./assets/videos/bienvenida-dra-sosa.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
         </div>
       </div>
       <div class="lg:w-1/2">
@@ -87,9 +92,7 @@
           CATSE es: Salud Emocional
         </h2>
         <p class="text-xl text-gray-600 leading-relaxed mb-8">
-          Somos un centro especializado en brindar acompañamiento profesional para
-          recuperar el equilibrio y fortalecer tu salud mental ante los retos de la
-          vida diaria.
+          Somos un centro especializado en brindar acompañamiento profesional <span class="font-semibold">para recuperar el equilibrio y fortalecer</span> la capacidad de "toma de decisiones" para los retos de la vida.
         </p>
         <div class="flex items-center gap-4 text-primary font-bold text-xl">
           <span class="w-12 h-1 bg-primary rounded-full"></span>
@@ -114,42 +117,42 @@
           <p class="text-lg text-gray-600 mb-8 leading-relaxed">
             Técnica de recreación mental que usa recuerdos sensoriales para revivir experiencias personales del pasado. Busca liberar emociones negativas y dolorosas asociadas a esos momentos.<br><br>En ningún momento se pierde la voluntad propia; se está relajado y visualizando, pero siempre con la capacidad de controlar y dirigir el proceso.
           </p>
-          <a href="./servicios.html" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+          <button id="open-hipnosis-modal" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer">
             Saber más <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          </button>
         </div>
+
         <div class="bg-white p-10 rounded-4xl border border-gray-100 shadow-lg hover:shadow-2xl transition-all group">
           <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-orange-100 transition-colors text-3xl">
-            👤
+            <i class="fa-solid fa-water"></i>
           </div>
+
           <h3 class="font-josefin text-2xl font-bold mb-4">Cortina de Agua</h3>
           <p class="text-lg text-gray-600 mb-8 leading-relaxed">
             Proceso de limpieza emocional que permite reconocer y liberar emociones y creencias negativas del pasado.<br><br>
             Al reconocer lo que nos debilita, se construye un escenario positivo y el pasado queda solo como aprendizaje.<br><br>
             El resultado es mayor calma, seguridad y confianza para corregir errores y avanzar con libertad.
           </p>
-          <a href="./servicios.html" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+          <button id="open-cortina-modal" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer">
             Saber más <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          </button>
         </div>
+
         <div class="bg-white p-10 rounded-4xl border border-gray-100 shadow-lg hover:shadow-2xl transition-all group">
           <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-orange-100 transition-colors text-3xl">
-            🎓
+            <i class="fa-solid fa-child-reaching"></i>
           </div>
-          <h3 class="font-josefin text-2xl font-bold mb-4">Talleres y Cursos</h3>
+
+          <h3 class="font-josefin text-2xl font-bold mb-4">Taller dinámico para la preadolescencia y adolescencia.</h3>
           <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-            Espacios grupales diseñados para desarrollar inteligencia emocional, autoconocimiento y crecimiento personal de forma práctica y consciente.<br><br>Mediante dinámicas y técnicas emocionales, se identifican patrones, se liberan cargas y se fortalecen recursos internos.
+            Se fortalece la relación entre padres e hijos y se fomenta el interés y gusto por la vida escolar.<br><br>
+            Busca ayudar a los niños de esta etapa (10 a 15 años) a desarrollar una actitud positiva hacia la vida escolar, mejorando su autoestima.<br><br><br>
           </p>
-          <a href="#" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+          <a href="genios.html" class="text-lg text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer">
             Saber más <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-      </div>
-      <div class="text-center mt-10 lg:mt-16">
-        <div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
-        <h2 class="font-josefin text-4xl md:text-5xl text-[#181818] font-bold mt-8">
-          Conócenos para saber más otros programas
-        </h2>
+
       </div>
     </section>
 
@@ -164,14 +167,13 @@
               <div class="flex flex-row gap-4">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
-              <img src="./assets/images/testimonial-users/01.jpg" alt="imagen paciente" class="w-20 h-20 rounded-full object-cover border-4 border-cyan-500" />
+              <img src="./assets/images/testimonial-users/lily-cholico.jpg" alt="imagen paciente" class="w-20 h-20 rounded-full object-cover border-4 border-cyan-500" />
             </div>
             <p class="text-xl text-gray-600 leading-relaxed italic">
-              "La doctora es genial, me sentí súper a gusto desde el inicio. Sus
-              ejercicios de autocomprensión me han ayudado mucho."
+              "a mí me sirvió la cortina de agua a darme cuenta de mi daño de abandono, me ayudó a comprender por qué buscaba atención de otras personas y me di cuenta que es una necesidad inconciente con la que me dañe mucho y no sabía, y sufrí por no lograr llenar ese vacío,pero al hacerla consiente me siento más plena y con fortaleza para vivir conmigo misma."
             </p>
             <div class="font-josefin font-bold text-gray-800 text-lg">
-              — Elena G.
+              — Lily Cholico.
             </div>
           </div>
           <div class="space-y-6">
@@ -179,16 +181,17 @@
               <div class="flex flex-row gap-4">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
-              <img src="./assets/images/testimonial-users/02.jpg" alt="imagen paciente" class="w-20 h-20 rounded-full object-cover border-4 border-cyan-500" />
+              <img src="./assets/images/testimonial-users/adriana-hdez-suarez.jpg" alt="imagen paciente" class="w-20 h-20 rounded-full object-cover border-4 border-cyan-500" />
             </div>
             <p class="text-xl text-gray-600 leading-relaxed italic">
-              "La doctora es genial, me sentí súper a gusto desde el inicio. Sus
-              ejercicios son fáciles y me gustan."
+              "Los ejercicios de hipnosis consciente me han servido mucho para calmar mi mente, aprender a relajarme, contactar con lo que hay en mi interior y así poder resolver situaciones específicas del pasado que me causaban dolor miedo o vergüenza aún en mi presente, lo cual me da esperanza. También me ayudan a contactar con un Poder Superior. ALTAMENTE RECOMENDADOS!!"
             </p>
             <div class="font-josefin font-bold text-gray-800 text-lg">
-              — Nancy R.
+              — Adriana Suárez.
             </div>
           </div>
+
+
         </div>
       </div>
     </section>
@@ -202,9 +205,9 @@
             </h2>
             <p class="text-xl text-white/90 mb-8 max-w-2xl">
               Potenciamos las habilidades cognitivas y emocionales de forma
-              innovadora para alcanzar el máximo potencial personal.
+              innovadora para alcanzar el máximo potencial de los niños.
             </p>
-            <a class="bg-white text-primary px-10 py-4 rounded-2xl font-josefin font-bold hover:bg-orange-600 hover:text-white transition-all cursor-pointer shadow-xl hover:-translate-y-1">
+            <a href="genios.html" class="bg-white text-primary px-8 py-4 rounded-full font-josefin font-bold hover:bg-orange-600 hover:text-white transition-colors cursor-pointer shadow-lg text-xl">
               Descubrir más
             </a>
           </div>
@@ -252,7 +255,7 @@
       <div>
         <h4 class="font-josefin text-xl font-bold mb-6 text-[#181818]">Contacto</h4>
         <ul class="space-y-3 text-gray-600">
-          <li>📞 3656 0166</li>
+          <li>📞 33 3656 0166</li>
           <li>📱 33 1175 5480</li>
           <li>✉️ info@catse-emocional.com</li>
           <li>📍 Zapopan Centro, Jalisco</li>
@@ -263,7 +266,7 @@
           Redes Sociales
         </h4>
         <div class="flex gap-6">
-          <a href="#"><i class="fa-brands fa-square-facebook text-4xl hover:text-primary transition-colors"></i></a>
+          <a href="https://www.youtube.com/@MariaEugeniaSosa-xo1vc"><i class="fa-brands fa-youtube text-4xl hover:text-red-600 transition-colors"></i></a>
           <a href="#"><i class="fa-brands fa-instagram text-4xl hover:text-orange-600 transition-colors"></i></a>
         </div>
       </div>
@@ -279,9 +282,143 @@
     </a>
   </footer>
 
-  <button id="whatsapp-btn" class="fixed bottom-6 right-6 w-16 h-16 bg-[#24cc63] rounded-full flex items-center justify-center shadow-2xl z-100 hover:scale-110 transition-transform duration-300 cursor-pointer" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/523311755480" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#24cc63] rounded-full flex items-center justify-center shadow-2xl z-100 hover:scale-110 transition-transform duration-300 cursor-pointer" aria-label="Contactar por WhatsApp">
     <i class="fa-brands fa-whatsapp text-white text-[32px]"></i>
-  </button>
+  </a>
+
+  <div id="hipnosis-modal" class="fixed inset-0 z-110 hidden items-center justify-center p-4 md:p-6">
+    <div class="absolute inset-0 bg-primary/20 backdrop-blur-md transition-opacity duration-300"></div>
+
+    <div class="relative bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-4xl shadow-2xl border border-gray-100 animate-in fade-in zoom-in duration-300">
+      <div class="sticky top-0 bg-white/90 backdrop-blur-md px-8 py-6 border-b border-gray-100 flex justify-between items-center z-10">
+        <h2 class="font-josefin text-3xl text-primary font-bold">Hipnosis Consciente</h2>
+        <button id="close-hipnosis-modal" class="p-2 hover:bg-red-200 rounded-lg transition-colors text-gray-400 hover:text-red-700 cursor-pointer">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+      </div>
+
+      <div class="p-8 md:p-12 space-y-8 text-lg text-gray-700 leading-relaxed">
+        <div>
+          <h3 class="font-josefin text-2xl text-[#181818] font-bold mb-4">¿Qué es hipnosis consciente?</h3>
+          <p>Es una técnica de recreación mental que utiliza todos los elementos que nuestra capacidad pueda recordar para revivir momentos del pasado propio y soltar emociones negativas y dolorosas que nos han afectado. Es <strong>“consciente”</strong>, porque en ningún momento se pierde la voluntad propia; se está relajado y visualizando, pero siempre con la capacidad de controlar y dirigir el proceso. El objetivo es liberarse del pasado y enfocarse en el presente, utilizando la sugestión para sanar y avanzar.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-blue-50/50 p-6 rounded-3xl border border-blue-100">
+          <div>
+            <p class="font-bold text-primary mb-2 italic uppercase tracking-wider">Momentos</p>
+            <p>Recordamos situaciones del pasado que nos lastimaron y sentimos como si lo estuviéramos viviendo ahora mismo; lloramos, nos angustiamos o sentimos culpa.</p>
+          </div>
+          <div>
+            <p class="font-bold text-primary mb-2 italic uppercase tracking-wider">Sentimientos</p>
+            <p>Sentimientos de soledad, abandono o impotencia que siguen marcándote en el presente y afectan tu vida actual.</p>
+          </div>
+        </div>
+
+        <p>Podemos hacer un trabajo juntos para que el pasado quede donde debe y sentirnos ligeros para tener fuerza para vivir el presente. Porque las emociones que no son del presente debilitan y solo nos dejan fuerza para sobrevivir en la vida, pero nunca para disfrutar.</p>
+
+        <div class="space-y-4">
+          <p class="font-bold text-[#181818]">Ejemplos en consulta:</p>
+          <ul class="list-none space-y-3">
+            <li class="flex gap-3"><span class="text-primary">•</span> <em>"Un sentimiento de ser víctima de los demás y, aunque lo razono y sé que ya no lo soy en el presente, lo sigo sintiendo."</em></li>
+            <li class="flex gap-3"><span class="text-primary">•</span> <em>"Un sentimiento de ser un hijo(a) abandonado(a) porque fuiste dado en adopción con familiares o con otras personas."</em></li>
+            <li class="flex gap-3"><span class="text-primary">•</span> <em>"Un sentimiento de culpa por haber hecho un acto que te arrepientes haber realizado y la culpa te sigue atormentando."</em></li>
+            <li class="flex gap-3"><span class="text-primary">•</span> <em>"Un momento vergonzoso que hubieras querido no realizar y que, al recordarlo, te dan ganas de esconderte."</em></li>
+            <li class="flex gap-3"><span class="text-primary">•</span> <em>"Un momento de injusticia donde no te pudiste defender por debilidad y que te lo sigues reclamando."</em></li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200">
+          <h4 class="font-josefin text-xl font-bold mb-4 text-[#181818]">Ley de Polaridad</h4>
+          <p class="text-sm italic mb-4">Principio fundamental de la filosofía hermética.</p>
+          <p>Establece que todo en el universo tiene su opuesto y que estos opuestos son idénticos en naturaleza, pero diferentes en grado. Si estás experimentando un extremo tienes la capacidad de desear y atraer el otro extremo. Esto se debe a que la energía de un extremo contiene la semilla de su opuesto. Al reconocer y aceptar el extremo en el que te encuentras, puedes comenzar a cambiar tu enfoque y atraer la energía opuesta.</p>
+        </div>
+
+        <p class="font-medium">Esto valida por qué es necesario recordar todo lo negativo y después ya pasar a lo positivo; uno quisiera solo sentir lo bonito, pero en cuanto más nos ubiquemos en lo doloroso, el deseo de lo positivo será más fuerte.</p>
+
+        <div class="flex flex-col md:flex-row gap-6 items-center justify-between pt-8 border-t border-gray-100">
+          <div class="flex items-center gap-4 text-gray-500">
+            <i class="fa-solid fa-calendar-check text-2xl"></i>
+            <div>
+              <p class="font-bold text-gray-800">Duración del proceso</p>
+              <p class="text-sm">3 a 5 sesiones (50 min cada una)</p>
+            </div>
+          </div>
+          <a href="https://wa.me/523311755480" target="_blank" class="bg-primary text-white px-10 py-4 rounded-2xl font-josefin font-bold hover:bg-primary-hover transition-all shadow-lg">
+            <i class="fa-brands fa-whatsapp text-white text-2xl align-middle"></i> Agendar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cortina-modal" class="fixed inset-0 z-110 hidden items-center justify-center p-4 md:p-6">
+    <div class="absolute inset-0 bg-primary/20 backdrop-blur-md transition-opacity duration-300"></div>
+    <div class="relative bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-4xl shadow-2xl border border-gray-100 animate-in fade-in zoom-in duration-300">
+
+      <div class="sticky top-0 bg-white/90 backdrop-blur-md px-8 py-6 border-b border-gray-100 flex justify-between items-center z-10">
+        <h2 class="font-josefin text-3xl text-primary font-bold">Cortina de Agua</h2>
+        <button id="close-cortina-modal" class="p-2 hover:bg-red-200 rounded-lg transition-colors text-gray-400 hover:text-red-700 cursor-pointer">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+      </div>
+
+      <div class="p-8 md:p-12 space-y-8 text-lg text-gray-700 leading-relaxed">
+        <p class="text-xl font-medium italic border-l-4 border-primary pl-4">
+          Es un proceso de limpieza de emociones, sentimientos negativos y reacciones inconscientes que nos ensucian el alma.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-red-50/50 p-6 rounded-3xl border border-red-100">
+            <h4 class="font-josefin font-bold text-red-700 mb-4 uppercase tracking-wider">Escenario Negativo</h4>
+            <ul class="space-y-2 text-base">
+              <li><span class="font-bold">1.</span> Sentimos lo que no queremos sentir.</li>
+              <li><span class="font-bold">2.</span> Ejecutamos acciones que no nos resuelven lo negativo.</li>
+              <li><span class="font-bold">3.</span> Nos debilitamos.</li>
+              <li><span class="font-bold">4.</span> Solo estamos <span class="uppercase">reaccionando</span> al pasado.</li>
+              <li><span class="font-bold">5.</span> Perpetuamos ideas o creencias negativas.</li>
+            </ul>
+          </div>
+
+          <div class="bg-green-50/50 p-6 rounded-3xl border border-green-100">
+            <h4 class="font-josefin font-bold text-green-700 mb-4 uppercase tracking-wider">Escenario Positivo</h4>
+            <ul class="space-y-2 text-base">
+              <li><span class="font-bold">1.</span> Se carga de un sentimiento positivo.</li>
+              <li><span class="font-bold">2.</span> Desarrollamos fortalezas.</li>
+              <li><span class="font-bold">3.</span> Vislumbramos acciones esperanzadoras.</li>
+              <li><span class="font-bold">4.</span> El pasado queda atrás, solo como vivencia.</li>
+              <li><span class="font-bold">5.</span> Te llenas de <span class="uppercase">fuerza interna</span> para el futuro.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-blue-50/50 p-8 rounded-3xl border border-blue-100">
+          <h4 class="font-josefin text-xl font-bold mb-4 text-[#181818]">Ley de Polaridad</h4>
+          <p class="text-base italic mb-4">
+            "Puedo sentir el beneficio de una bebida caliente si se está con mucho frío; si no tengo frío, ese deseo no se da."
+          </p>
+          <p class="text-base">
+            Al recrear todo el momento negativo, es más posible y enriquecedor recrear y sentir el momento positivo y confiar en que se puede lograr.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-josefin text-xl font-bold text-[#181818]">Ejemplo en consulta:</h4>
+          <div class="bg-gray-50 p-6 rounded-3xl border border-gray-200 text-base">
+            <p class="mb-4"><strong>Antes:</strong> Sentir culpa por una decisión errónea, distraerse con evasiones (alcohol, películas), debilitarse con auto-reclamos y perpetuar la idea de que deberías ser perfecto.</p>
+            <p class="text-primary font-bold mb-4 uppercase text-center tracking-widest">Pasando la cortina de agua</p>
+            <p><strong>Después:</strong> Habilidad de resolver la decisión, corregir el rumbo con seguridad, sentir firmeza y tranquilidad para ser un humano libre.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-center justify-between pt-8 border-t border-gray-100">
+          <p class="font-bold text-gray-800">Recupera tu calma y seguridad.</p>
+          <a href="https://wa.me/523311755480" target="_blank" class="bg-primary text-white px-10 py-4 rounded-2xl font-josefin font-bold hover:bg-primary-hover transition-all shadow-lg">
+            <i class="fa-brands fa-whatsapp text-white text-2xl align-middle"></i> Agendar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="./main.js"></script>
 </body>
