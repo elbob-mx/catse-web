@@ -11,5 +11,9 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0"
   }
 }
